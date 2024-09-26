@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/Logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="description" content="YTLitePlus - Supercharge your YouTube Experience" />
+    <title>YTLitePlus - Supercharge Your YouTube Experience</title>
+  </head>
+  <body class="bg-white transition-colors dark:bg-black">
+    <main class="flex h-screen w-screen justify-center p-8">
+      <div class="w-full space-y-20 md:w-3/4">
+        <div class="relative flex justify-between">
+          <div class="flex w-full flex-col place-items-center gap-8 sm:flex-row">
+            <img src="/Logo.png" alt="YTLitePlus Logo" class="size-32 rounded-3xl border border-gray-400 sm:size-48 dark:border-gray-500" />
+            <div class="m-4 flex flex-col justify-between">
+              <div class="text-center sm:text-left">
+                <h1 class="text-4xl font-bold text-black dark:text-white">YTLitePlus</h1>
+                <h2 class="font-semibold text-gray-500 dark:text-gray-400">YTLite with more features!</h2>
+              </div>
+              <br />
+              <div class="grid grid-flow-row grid-rows-2 gap-3 lg:grid-flow-col xl:grid-rows-1">
+                <a
+                  href="altstore://source/?url=https://raw.githubusercontent.com/YTLitePlus/YTLitePlus-Altstore/main/apps.json"
+                  class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-2 transition-colors hover:border-gray-500 dark:border-gray-500 dark:hover:border-gray-600">
+                  <img src="/AltStore.png" alt="AltStore Logo" class="size-10 rounded-lg border border-gray-400 dark:border-gray-500" />
+                  <div class="text-left">
+                    <h2 class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white">Add to Altstore</h2>
+                    <h2 class="font-semibold text-gray-500 dark:text-gray-400">or SideStore</h2>
+                  </div>
+                </a>
+
+                <a
+                  href="//files.catbox.moe/.ipa"
+                  id="downloadIpa"
+                  class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-1 transition-colors hover:border-gray-500 dark:border-gray-500 dark:hover:border-gray-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 512 512" class="size-10 rounded-lg border border-gray-400 bg-black p-1.5 text-white dark:border-gray-500">
+                    <path
+                      fill="#fff"
+                      d="M288 32a32 32 0 1 0-64 0v243l-73-74a32 32 0 0 0-46 46l128 128c13 12 33 12 46 0l128-128a32 32 0 0 0-46-46l-73 74V32zM64 352c-35 0-64 29-64 64v32c0 35 29 64 64 64h384c35 0 64-29 64-64v-32c0-35-29-64-64-64H347l-46 45a64 64 0 0 1-90 0l-45-45H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+                  </svg>
+                  <div class="text-left">
+                    <h2 class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white">Download .ipa</h2>
+                    <h2 class="font-semibold text-gray-500 dark:text-gray-400">catbox.moe</h2>
+                  </div>
+                </a>
+
+                <a
+                  href="//github.com/YTLitePlus/YTLitePlus"
+                  target="_blank"
+                  class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-1 transition-colors hover:border-gray-500 dark:border-gray-500 dark:hover:border-gray-600">
+                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 98 96" class="size-10 rounded-lg border border-gray-400 bg-black p-1 text-white dark:border-gray-500">
+                    <path
+                      fill="#fff"
+                      d="M49 0a49 49 0 0 0-15 96c2 0 3-1 3-2V84c-14 3-17-5-17-5-2-6-5-8-5-8-5-3 0-3 0-3 5 1 8 5 8 5 4 8 11 6 14 4 0-3 2-5 3-6-11-1-22-5-22-24 0-6 2-10 5-14-1-1-2-6 0-13 0 0 4-1 14 5a47 47 0 0 1 12-1l12 1c9-6 13-5 13-5 3 7 1 12 1 13 3 4 5 8 5 14 0 19-11 23-22 24 1 1 3 4 3 9v14c0 1 1 2 3 2 20-7 34-25 34-47C98 22 76 0 49 0z" />
+                  </svg>
+                  <div class="text-left">
+                    <h2 class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white">See on GitHub</h2>
+                    <h2 class="font-semibold text-gray-500 dark:text-gray-400">Source Code</h2>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="absolute right-0 top-0">
+            <button
+              onclick='document.documentElement.classList.contains("dark")?document.documentElement.classList.remove("dark"):document.documentElement.classList.add("dark");'
+              type="button"
+              class="grid size-10 place-items-center rounded-lg border border-gray-400 transition-colors hover:border-gray-500 dark:border-gray-500 dark:hover:border-gray-600">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" stroke-width="1.5" class="size-8 p-1 dark:hidden" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M22 15a10 10 0 0 1-4 1A10 10 0 0 1 9 2a10 10 0 0 0-6 9c0 6 4 10 10 10a10 10 0 0 0 9-6Z" />
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" stroke-width="2" class="hidden size-8 p-1 dark:block" viewBox="0 0 24 24" stroke="#fff">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2m6 1-1 1m4 5h-2m-1 6-1-1m-5 2v2m-5-4-1 1m-1-6H3m4-5L6 6m10 6a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="overflow-x-scroll">
+          <h1 class="text-4xl font-bold text-black dark:text-white">Screenshots</h1>
+          <br />
+          <div class="flex gap-4 p-4">
+            <a
+              class="aspect-[750/1334] h-96 rounded-3xl border border-gray-400 transition-colors transition-transform duration-300 hover:scale-105 hover:border-gray-500 dark:border-gray-500 dark:hover:border-gray-600"
+              href="/Screenshot-1.png"
+              data-fancybox="gallery">
+              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-1.png" alt="YTLitePlus home screen" width="750" height="1334" />
+            </a>
+            <a
+              class="aspect-[750/1334] h-96 rounded-3xl border border-gray-400 transition-colors transition-transform duration-300 hover:scale-105 hover:border-gray-500 dark:border-gray-500 dark:hover:border-gray-600"
+              href="/Screenshot-2.png"
+              data-fancybox="gallery">
+              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-2.png" alt="YTLitePlus video player" width="750" height="1334" />
+            </a>
+            <a
+              class="aspect-[750/1334] h-96 rounded-3xl border border-gray-400 transition-colors transition-transform duration-300 hover:scale-105 hover:border-gray-500 dark:border-gray-500 dark:hover:border-gray-600"
+              href="/Screenshot-3.png"
+              data-fancybox="gallery">
+              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-3.png" alt="YTLitePlus settings menu" width="750" height="1334" />
+            </a>
+            <a
+              class="aspect-[750/1334] h-96 rounded-3xl border border-gray-400 transition-colors transition-transform duration-300 hover:scale-105 hover:border-gray-500 dark:border-gray-500 dark:hover:border-gray-600"
+              href="/Screenshot-4.png"
+              data-fancybox="gallery">
+              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-4.png" alt="YTLitePlus advanced settings" width="750" height="1334" />
+            </a>
+            <a
+              class="aspect-[750/1334] h-96 rounded-3xl border border-gray-400 transition-colors transition-transform duration-300 hover:scale-105 hover:border-gray-500 dark:border-gray-500 dark:hover:border-gray-600"
+              href="/Screenshot-5.png"
+              data-fancybox="gallery">
+              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-5.png" alt="YTLitePlus video quality options" width="750" height="1334" />
+            </a>
+            <a
+              class="aspect-[750/1334] h-96 rounded-3xl border border-gray-400 transition-colors transition-transform duration-300 hover:scale-105 hover:border-gray-500 dark:border-gray-500 dark:hover:border-gray-600"
+              href="/Screenshot-6.png"
+              data-fancybox="gallery">
+              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-6.png" alt="YTLitePlus playback speed options" width="750" height="1334" />
+            </a>
+            <a
+              class="aspect-[750/1334] h-96 rounded-3xl border border-gray-400 transition-colors transition-transform duration-300 hover:scale-105 hover:border-gray-500 dark:border-gray-500 dark:hover:border-gray-600"
+              href="/Screenshot-7.png"
+              data-fancybox="gallery">
+              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-7.png" alt="YTLitePlus picture-in-picture mode" width="750" height="1334" />
+            </a>
+            <a
+              class="aspect-[750/1334] h-96 rounded-3xl border border-gray-400 transition-colors transition-transform duration-300 hover:scale-105 hover:border-gray-500 dark:border-gray-500 dark:hover:border-gray-600"
+              href="/Screenshot-8.png"
+              data-fancybox="gallery">
+              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-8.png" alt="YTLitePlus sponsorblock settings" width="750" height="1334" />
+            </a>
+            <a
+              class="aspect-[750/1334] h-96 rounded-3xl border border-gray-400 transition-colors transition-transform duration-300 hover:scale-105 hover:border-gray-500 dark:border-gray-500 dark:hover:border-gray-600"
+              href="/Screenshot-9.png"
+              data-fancybox="gallery">
+              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-9.png" alt="YTLitePlus additional features" width="750" height="1334" />
+            </a>
+          </div>
+        </div>
+        <div class="overflow-x-scroll">
+          <h1 class="text-4xl font-bold text-black dark:text-white">Description</h1>
+          <h2 class="font-semibold text-gray-500 dark:text-gray-400">
+            YouTube for iOS, supercharged with
+            <a href="https://github.com/dayanch96" target="_blank" class="text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">@dayanch96</a>
+            YouTube Plus (ex. YTLite) and several other tweaks.
+          </h2>
+          <br />
+          <ul class="space-y-6 font-medium text-black dark:text-white">
+            <li>YTLite: A tweak that enhances the YouTube experience by removing ads, enabling background playback and offering over 60 customization options.</li>
+            <li>YTUHD: This tweak unlocks 1440p (2K) and 2160p (4K) resolutions in the iOS YouTube app.</li>
+            <li>YouPiP: Enables native Picture-in-Picture feature for videos in the YouTube app.</li>
+            <li>YTABConfig: Adds a new section named "A/B" in the YouTube app settings where all features can be toggled freely by the user.</li>
+            <li>YouMute: Allows users to mute/unmute videos directly in the YouTube Video Player.</li>
+            <li>DontEatMyContent: Prevents the notch/Dynamic Island from covering 2:1 video content in YouTube.</li>
+            <li>Return YouTube Dislikes: Brings back Dislike counts under YouTube videos using ReturnYoutubeDislike's API.</li>
+            <li>iSponsorBlock: Skips annoying sponsor ads inside YouTube videos.</li>
+            <li>YouRememberCaption: Makes YouTube remember your video caption setting.</li>
+            <li>YTNoTracking: An iOS YouTube Tweak that disables Tracking Parameters in the YouTube App.</li>
+            <li>YTNoCheckLocalNetWork: Blocks the Local Network permission popup in YouTube.</li>
+            <li>BigYTMiniPlayer: Jailbreak tweak that makes the miniplayer in youtube easier to see.</li>
+            <li>YTSpeed: Adds 2.25x to 5x playback speed options in the YouTube video player.</li>
+            <li>YTHoldForSpeed: Allows you to quickly toggle between a selected video playback speed by tapping and holding on the video player in the YouTube application.</li>
+            <li>YTVideoOverlay: A helper tweak that adds buttons on the YouTube video overlay.</li>
+            <li>YouQuality: Enables you to view and change video quality in YouTube faster.</li>
+            <li>YTNoModernUI: This tweak changes and removes some newer UI elements from the YouTube app such as some rounded buttons, old progress bar, and old buffer bar.</li>
+            <li>OLEDDarkmode: Replace official Youtube darkmode with a true OLED darkmode.</li>
+            <li>OLDDarkmode: Replace new official Youtube darkmode with old (grey) Youtube darkmode.</li>
+            <li>LowContrastMode: Makes the UI interface look dimmer to make it easier on the eyes. (App Compatibility: v17.33.2-v17.38.10)</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <div id="alert" class="fixed inset-0 grid hidden place-items-center backdrop-blur">
+      <div class="space-y-3 rounded-2xl border border-gray-400 bg-white p-4 hover:border-gray-500 dark:border-gray-500 dark:bg-black dark:hover:border-gray-600">
+        <h1 class="text-3xl font-bold text-black dark:text-white">Information</h1>
+        <h2 class="font-semibold text-black dark:text-white">Download link wasn't found in the latest release.</h2>
+        <div class="pb-3 pt-2">
+          <hr class="border-gray-400 hover:border-gray-500 dark:border-gray-500 dark:hover:border-gray-600" />
+        </div>
+        <button
+          type="button"
+          onclick="document.getElementById('alert').classList.add('hidden')"
+          class="text-semibold rounded-2xl border border-gray-400 px-3 py-1 text-black hover:border-gray-500 dark:border-gray-500 dark:text-white dark:hover:border-gray-600">
+          Okay!
+        </button>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
