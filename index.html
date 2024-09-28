@@ -12,7 +12,7 @@
     <main class="flex h-screen w-screen justify-center p-8">
       <div class="w-full space-y-20 md:w-3/4">
         <div class="relative flex justify-between">
-          <div class="flex w-full flex-col place-items-center gap-8 sm:flex-row">
+          <div class="mt-10 flex w-full flex-col place-items-center gap-8 sm:flex-row">
             <img src="/Logo.png" alt="YTLitePlus Logo" class="size-32 rounded-3xl border border-gray-400 sm:size-48 dark:border-gray-500" />
             <div class="m-4 flex flex-col justify-between">
               <div class="text-center sm:text-left">
@@ -31,8 +31,7 @@
                   </div>
                 </a>
 
-                <a
-                  href="//files.catbox.moe/.ipa"
+                <button
                   id="downloadIpa"
                   class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-1 transition-colors hover:border-gray-500 dark:border-gray-500 dark:hover:border-gray-600">
                   <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 512 512" class="size-10 rounded-lg border border-gray-400 bg-black p-1.5 text-white dark:border-gray-500">
@@ -42,9 +41,9 @@
                   </svg>
                   <div class="text-left">
                     <h2 class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white">Download .ipa</h2>
-                    <h2 class="font-semibold text-gray-500 dark:text-gray-400">catbox.moe</h2>
+                    <h2 class="font-semibold text-gray-500 dark:text-gray-400">Via catbox.moe</h2>
                   </div>
-                </a>
+                </button>
 
                 <a
                   href="//github.com/YTLitePlus/YTLitePlus"
@@ -63,9 +62,9 @@
               </div>
             </div>
           </div>
-          <div class="absolute right-0 top-0">
+          <div class="absolute right-0 top-10">
             <button
-              onclick='document.documentElement.classList.contains("dark")?document.documentElement.classList.remove("dark"):document.documentElement.classList.add("dark");'
+              id="themeToggle"
               type="button"
               class="grid size-10 place-items-center rounded-lg border border-gray-400 transition-colors hover:border-gray-500 dark:border-gray-500 dark:hover:border-gray-600">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" stroke-width="1.5" class="size-8 p-1 dark:hidden" viewBox="0 0 24 24">
@@ -137,36 +136,99 @@
             </a>
           </div>
         </div>
-        <div class="overflow-x-scroll">
-          <h1 class="text-4xl font-bold text-black dark:text-white">Description</h1>
-          <h2 class="font-semibold text-gray-500 dark:text-gray-400">
+        <div class="space-y-3 overflow-x-scroll">
+          <h1 class="text-5xl font-bold text-black sm:text-6xl dark:text-white">Description</h1>
+          <h2 class="text-xl font-semibold text-gray-500 dark:text-gray-400">
             YouTube for iOS, supercharged with
-            <a href="https://github.com/dayanch96" target="_blank" class="text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">@dayanch96</a>
+            <a href="//github.com/dayanch96" target="_blank" class="text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">@dayanch96</a>
             YouTube Plus (ex. YTLite) and several other tweaks.
           </h2>
           <br />
-          <ul class="space-y-6 font-medium text-black dark:text-white">
-            <li>YTLite: A tweak that enhances the YouTube experience by removing ads, enabling background playback and offering over 60 customization options.</li>
-            <li>YTUHD: This tweak unlocks 1440p (2K) and 2160p (4K) resolutions in the iOS YouTube app.</li>
-            <li>YouPiP: Enables native Picture-in-Picture feature for videos in the YouTube app.</li>
-            <li>YTABConfig: Adds a new section named "A/B" in the YouTube app settings where all features can be toggled freely by the user.</li>
-            <li>YouMute: Allows users to mute/unmute videos directly in the YouTube Video Player.</li>
-            <li>DontEatMyContent: Prevents the notch/Dynamic Island from covering 2:1 video content in YouTube.</li>
-            <li>Return YouTube Dislikes: Brings back Dislike counts under YouTube videos using ReturnYoutubeDislike's API.</li>
-            <li>iSponsorBlock: Skips annoying sponsor ads inside YouTube videos.</li>
-            <li>YouRememberCaption: Makes YouTube remember your video caption setting.</li>
-            <li>YTNoTracking: An iOS YouTube Tweak that disables Tracking Parameters in the YouTube App.</li>
-            <li>YTNoCheckLocalNetWork: Blocks the Local Network permission popup in YouTube.</li>
-            <li>BigYTMiniPlayer: Jailbreak tweak that makes the miniplayer in youtube easier to see.</li>
-            <li>YTSpeed: Adds 2.25x to 5x playback speed options in the YouTube video player.</li>
-            <li>YTHoldForSpeed: Allows you to quickly toggle between a selected video playback speed by tapping and holding on the video player in the YouTube application.</li>
-            <li>YTVideoOverlay: A helper tweak that adds buttons on the YouTube video overlay.</li>
-            <li>YouQuality: Enables you to view and change video quality in YouTube faster.</li>
-            <li>YTNoModernUI: This tweak changes and removes some newer UI elements from the YouTube app such as some rounded buttons, old progress bar, and old buffer bar.</li>
-            <li>OLEDDarkmode: Replace official Youtube darkmode with a true OLED darkmode.</li>
-            <li>OLDDarkmode: Replace new official Youtube darkmode with old (grey) Youtube darkmode.</li>
-            <li>LowContrastMode: Makes the UI interface look dimmer to make it easier on the eyes. (App Compatibility: v17.33.2-v17.38.10)</li>
+          <ul class="space-y-6 text-xl font-medium text-black md:text-2xl dark:text-white">
+            <li>
+              <a target="_blank" href="//github.com/dayanch96" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">Youtube Plus</a>: YouTube tweak providing
+              no ads, background playback, customizable navigation and tab bars; includes Advanced mode with over 50 additional options for enhanced customization.
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/Galactic-Dev/iSponsorBlock" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">iSponsorBlock</a>: Skips
+              annoying sponsor ads inside videos. iSponsorBlock is based on
+              <a target="_blank" href="https://sponsor.ajay.app/" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">SponsorBlock engine</a>. Basically,
+              this is the iOS version of the SponsorBlock extension.
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/PoomSmart/YouPiP" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">YouPiP</a>: Enable YouTube's
+              native PiP. More options are in YouTube Settings => General.
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/PoomSmart/YTUHD" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">YTUHD</a>: Unlock VP9 codec and in
+              effect, enables video quality of 2K and 4K. You can configure YTUHD in YouTube's Settings - Video quality preferences.
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/PoomSmart/Return-YouTube-Dislikes" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300"
+                >Return YouTube Dislike</a
+              >: Brings back Dislike counts under YouTube videos using ReturnYoutubeDislike's API.
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/PoomSmart/YTClassicVideoQuality" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300"
+                >YTClassicVideoQuality</a
+              >: Brings back the old video quality selector, which is a lot better than the new one.
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/level3tjg/YTNoHoverCards" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">YTNoHoverCards</a>: Offer
+              an option to enable/disable the annoying suggested videos show up at the end of the videos.
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/PoomSmart/YTABGoodies" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">YTABGoodies</a>: Allow you to
+              disable some YouTube A/B testing features. It is a combination of several tweaks, such as YouAreThere, YouRememberCaption, and YTNoCheckLocalNetwork.
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/PoomSmart/NoYTPremium" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">NOYTPremium</a>: Remove
+              YouTube Premium upsell alerts.
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/lyvendia/YTSpeed" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">YTSpeed</a>: Add 2.25x to 5x
+              playback speed options in the video player.
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/level3tjg/YTMiniplayerEnabler" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300"
+                >YTMiniplayerEnabler</a
+              >: Enable Miniplayer for all YouTube videos.
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/therealFoxster/DontEatMyContent" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">DontEatMyContent</a
+              >: Prevent the notch/Dynamic Island from munching on 2:1 video content in YouTube.
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/PoomSmart/YTShortsProgress" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">YTShortsProgress</a>:
+              Always enable progress bar and scrubbing in YouTube Shorts (iPhone only).
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/PoomSmart/YTABConfig" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">YTABConfig</a>: Allow user to
+              control over YouTube A/B testing flags.
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/PoomSmart/YouMute" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">YouMute</a>: Mute/unmute videos
+              in the YouTube Video Player directly.
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/arichorn/LowContrastMode" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">LowContrastMode</a>: Makes
+              the YouTube Interface Low Contrast as possible to make it easier on the eyes.
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/MiRO92/YTNoShorts" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">YTNoShorts</a>: Disable YouTube
+              Shorts.
+            </li>
+            <li>
+              <a target="_blank" href="//github.com/Galactic-Dev/BigYTMiniPlayer" class="font-bold text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">BigYTMiniPlayer</a>:
+              Enable a bigger YouTube Miniplayer.
+            </li>
           </ul>
+        </div>
+        <div class="pb-20 text-center text-lg font-semibold text-black dark:text-white">
+          YTLitePlus was forked from
+          <a href="//github.com/arichornlover/YouTubeRebornPlus" target="_blank" class="text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">@arichorn's YoutubeRebornPlus</a
+          >, who himself forked it from
+          <a href="//github.com/qnblackcat/uYouPlus" target="_blank" class="text-blue-500 hover:text-blue-400 dark:text-blue-400 dark:hover:text-blue-300">@qnblackcat's uYouPlus</a> so thanks to them.
         </div>
       </div>
     </main>
@@ -179,7 +241,7 @@
         </div>
         <button
           type="button"
-          onclick="document.getElementById('alert').classList.add('hidden')"
+          onclick='document.getElementById("alert").classList.add("hidden")'
           class="text-semibold rounded-2xl border border-gray-400 px-3 py-1 text-black hover:border-gray-500 dark:border-gray-500 dark:text-white dark:hover:border-gray-600">
           Okay!
         </button>
