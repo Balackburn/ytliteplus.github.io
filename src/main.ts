@@ -4,6 +4,8 @@ import "@fancyapps/ui/dist/fancybox/fancybox.css";
 
 Fancybox.bind("[data-fancybox]");
 
+const alert = document.getElementById("alert") as HTMLDialogElement;
+
 document.getElementById("downloadIpa")!.addEventListener("click", async () => {
   const response = await fetch("https://api.github.com/repos/YTLitePlus/YTLitePlus/releases/latest");
   const json = await response.json();
@@ -14,7 +16,7 @@ document.getElementById("downloadIpa")!.addEventListener("click", async () => {
     const downloadUrl = `https://files.catbox.moe/${fileName}`;
     window.location.href = downloadUrl;
   } else {
-    document.getElementById("alert")!.showModal();
+    alert.showModal();
   }
 });
 
