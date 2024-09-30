@@ -4,63 +4,57 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/Logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <meta name="description" content="YTLitePlus - Supercharge your YouTube Experience" />
     <title>YTLitePlus - Supercharge Your YouTube Experience</title>
   </head>
   <body class="bg-white transition-colors dark:bg-black">
-    <main class="flex h-screen w-screen justify-center p-8">
-      <div class="w-full space-y-20 md:w-3/4">
-        <div class="relative flex justify-between">
-          <div class="mt-10 flex w-full flex-col place-items-center gap-8 sm:flex-row">
-            <img src="/Logo.png" alt="" class="size-32 rounded-3xl border border-gray-400 sm:size-48 dark:border-gray-500" />
-            <div class="m-4 flex flex-col justify-between">
-              <div class="text-center sm:text-left">
-                <h1 class="text-5xl font-bold text-black dark:text-white">YTLitePlus</h1>
-                <h2 class="text-lg font-semibold text-gray-500 dark:text-gray-400">YTLite with more features!</h2>
-              </div>
-              <br />
-              <div class="grid grid-flow-row grid-rows-2 gap-3 lg:grid-flow-col xl:grid-rows-1">
-                <a
-                  href="altstore://source/?url=https://raw.githubusercontent.com/YTLitePlus/YTLitePlus-Altstore/main/apps.json"
-                  class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-2 transition-[filter] hover:brightness-[.8] dark:border-gray-500">
-                  <img src="/AltStore.png" alt="" class="size-10 rounded-lg border border-gray-400 dark:border-gray-500" />
-                  <div class="text-left">
-                    <h2 class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white">Add to Altstore</h2>
-                    <h2 class="font-semibold text-gray-500 dark:text-gray-400">or SideStore</h2>
-                  </div>
-                </a>
+    <div class="flex h-screen w-screen justify-center p-8">
+      <main class="w-full space-y-20 md:w-3/5">
+        <header class="flex flex-col items-center gap-10 md:flex-row md:items-start">
+          <img src="/Logo.png" alt="" class="size-32 rounded-3xl border border-gray-400 sm:size-48 dark:border-gray-500" />
+          <div class="flex grow flex-col items-center justify-between gap-4 md:items-stretch">
+            <h1 class="text-5xl font-bold text-black dark:text-white">YTLitePlus</h1>
+            <h2 class="text-3xl font-semibold text-gray-500 dark:text-gray-400">YTLite with more features!</h2>
+            <div class="grid grid-cols-[repeat(auto-fit,14rem)] gap-3">
+              <a
+                href="altstore://source/?url=https://raw.githubusercontent.com/YTLitePlus/YTLitePlus-Altstore/main/apps.json"
+                class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-2 transition-[filter] hover:brightness-[.8] dark:border-gray-500">
+                <img src="/AltStore.png" alt="" class="size-10 rounded-lg border border-gray-400 dark:border-gray-500" />
+                <div class="text-left">
+                  <h2 class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white">Add to Altstore</h2>
+                  <h2 class="font-semibold text-gray-500 dark:text-gray-400">or SideStore</h2>
+                </div>
+              </a>
 
-                <button id="downloadIpa" class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-2 transition-[filter] hover:brightness-[.8] dark:border-gray-500">
-                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 512 512" class="size-10 rounded-lg border border-gray-400 bg-black p-1.5 text-white dark:border-gray-500">
-                    <path
-                      fill="#fff"
-                      d="M288 32a32 32 0 1 0-64 0v243l-73-74a32 32 0 0 0-46 46l128 128c13 12 33 12 46 0l128-128a32 32 0 0 0-46-46l-73 74V32zM64 352c-35 0-64 29-64 64v32c0 35 29 64 64 64h384c35 0 64-29 64-64v-32c0-35-29-64-64-64H347l-46 45a64 64 0 0 1-90 0l-45-45H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
-                  </svg>
-                  <div class="text-left">
-                    <h2 class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white">Download .ipa</h2>
-                    <h2 class="font-semibold text-gray-500 dark:text-gray-400">Via catbox.moe</h2>
-                  </div>
-                </button>
+              <button id="downloadIpa" class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-2 transition-[filter] hover:brightness-[.8] dark:border-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 512 512" class="size-10 rounded-lg border border-gray-400 bg-black p-1.5 text-white dark:border-gray-500">
+                  <path
+                    fill="#fff"
+                    d="M288 32a32 32 0 1 0-64 0v243l-73-74a32 32 0 0 0-46 46l128 128c13 12 33 12 46 0l128-128a32 32 0 0 0-46-46l-73 74V32zM64 352c-35 0-64 29-64 64v32c0 35 29 64 64 64h384c35 0 64-29 64-64v-32c0-35-29-64-64-64H347l-46 45a64 64 0 0 1-90 0l-45-45H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+                </svg>
+                <div class="text-left">
+                  <h2 class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white">Download .ipa</h2>
+                  <h2 class="font-semibold text-gray-500 dark:text-gray-400">Via catbox.moe</h2>
+                </div>
+              </button>
 
-                <a
-                  href="//github.com/YTLitePlus/YTLitePlus"
-                  target="_blank"
-                  class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-2 transition-[filter] hover:brightness-[.8] dark:border-gray-500">
-                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 98 96" class="size-10 rounded-lg border border-gray-400 bg-black p-1 text-white dark:border-gray-500">
-                    <path
-                      fill="#fff"
-                      d="M49 0a49 49 0 0 0-15 96c2 0 3-1 3-2V84c-14 3-17-5-17-5-2-6-5-8-5-8-5-3 0-3 0-3 5 1 8 5 8 5 4 8 11 6 14 4 0-3 2-5 3-6-11-1-22-5-22-24 0-6 2-10 5-14-1-1-2-6 0-13 0 0 4-1 14 5a47 47 0 0 1 12-1l12 1c9-6 13-5 13-5 3 7 1 12 1 13 3 4 5 8 5 14 0 19-11 23-22 24 1 1 3 4 3 9v14c0 1 1 2 3 2 20-7 34-25 34-47C98 22 76 0 49 0z" />
-                  </svg>
-                  <div class="text-left">
-                    <h2 class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white">See on GitHub</h2>
-                    <h2 class="font-semibold text-gray-500 dark:text-gray-400">Source Code</h2>
-                  </div>
-                </a>
-              </div>
+              <a
+                href="//github.com/YTLitePlus/YTLitePlus"
+                target="_blank"
+                class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-2 transition-[filter] hover:brightness-[.8] dark:border-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 98 96" class="size-10 rounded-lg border border-gray-400 bg-black p-1 text-white dark:border-gray-500">
+                  <path
+                    fill="#fff"
+                    d="M49 0a49 49 0 0 0-15 96c2 0 3-1 3-2V84c-14 3-17-5-17-5-2-6-5-8-5-8-5-3 0-3 0-3 5 1 8 5 8 5 4 8 11 6 14 4 0-3 2-5 3-6-11-1-22-5-22-24 0-6 2-10 5-14-1-1-2-6 0-13 0 0 4-1 14 5a47 47 0 0 1 12-1l12 1c9-6 13-5 13-5 3 7 1 12 1 13 3 4 5 8 5 14 0 19-11 23-22 24 1 1 3 4 3 9v14c0 1 1 2 3 2 20-7 34-25 34-47C98 22 76 0 49 0z" />
+                </svg>
+                <div class="text-left">
+                  <h2 class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white">See on GitHub</h2>
+                  <h2 class="font-semibold text-gray-500 dark:text-gray-400">Source Code</h2>
+                </div>
+              </a>
             </div>
           </div>
-          <div class="absolute right-0 top-10">
+          <div>
             <button id="themeToggle" type="button" class="grid size-10 place-items-center rounded-full transition-colors hover:bg-gray-100 dark:hover:bg-gray-900" aria-label="Toggle Theme">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="#000" stroke-width="1.5" class="size-8 p-1 dark:hidden" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M22 15a10 10 0 0 1-4 1A10 10 0 0 1 9 2a10 10 0 0 0-6 9c0 6 4 10 10 10a10 10 0 0 0 9-6Z" />
@@ -70,48 +64,46 @@
               </svg>
             </button>
           </div>
-        </div>
-        <div>
+        </header>
+        <div class="space-y-10">
           <h1 class="text-4xl font-bold text-black dark:text-white">Screenshots</h1>
-          <br />
           <div class="flex gap-4 overflow-x-scroll p-4">
             <a class="picture" href="/Screenshot-1.png" data-fancybox="gallery">
-              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-1.png" alt="YTLitePlus home screen" width="750" height="1334" />
+              <img class="rounded-3xl" src="/Screenshot-1.png" alt="YTLitePlus home screen" width="750" height="1334" />
             </a>
             <a class="picture" href="/Screenshot-2.png" data-fancybox="gallery">
-              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-2.png" alt="YTLitePlus video player" width="750" height="1334" />
+              <img class="rounded-3xl" src="/Screenshot-2.png" alt="YTLitePlus video player" width="750" height="1334" />
             </a>
             <a class="picture" href="/Screenshot-3.png" data-fancybox="gallery">
-              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-3.png" alt="YTLitePlus settings menu" width="750" height="1334" />
+              <img class="rounded-3xl" src="/Screenshot-3.png" alt="YTLitePlus settings menu" width="750" height="1334" />
             </a>
             <a class="picture" href="/Screenshot-4.png" data-fancybox="gallery">
-              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-4.png" alt="YTLitePlus advanced settings" width="750" height="1334" />
+              <img class="rounded-3xl" src="/Screenshot-4.png" alt="YTLitePlus advanced settings" width="750" height="1334" />
             </a>
             <a class="picture" href="/Screenshot-5.png" data-fancybox="gallery">
-              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-5.png" alt="YTLitePlus video quality options" width="750" height="1334" />
+              <img class="rounded-3xl" src="/Screenshot-5.png" alt="YTLitePlus video quality options" width="750" height="1334" />
             </a>
             <a class="picture" href="/Screenshot-6.png" data-fancybox="gallery">
-              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-6.png" alt="YTLitePlus playback speed options" width="750" height="1334" />
+              <img class="rounded-3xl" src="/Screenshot-6.png" alt="YTLitePlus playback speed options" width="750" height="1334" />
             </a>
             <a class="picture" href="/Screenshot-7.png" data-fancybox="gallery">
-              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-7.png" alt="YTLitePlus picture-in-picture mode" width="750" height="1334" />
+              <img class="rounded-3xl" src="/Screenshot-7.png" alt="YTLitePlus picture-in-picture mode" width="750" height="1334" />
             </a>
             <a class="picture" href="/Screenshot-8.png" data-fancybox="gallery">
-              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-8.png" alt="YTLitePlus sponsorblock settings" width="750" height="1334" />
+              <img class="rounded-3xl" src="/Screenshot-8.png" alt="YTLitePlus sponsorblock settings" width="750" height="1334" />
             </a>
             <a class="picture" href="/Screenshot-9.png" data-fancybox="gallery">
-              <img class="w-fill h-fill rounded-3xl" src="/Screenshot-9.png" alt="YTLitePlus additional features" width="750" height="1334" />
+              <img class="rounded-3xl" src="/Screenshot-9.png" alt="YTLitePlus additional features" width="750" height="1334" />
             </a>
           </div>
         </div>
-        <div class="space-y-3">
-          <h1 class="text-5xl font-bold text-black sm:text-6xl dark:text-white">Description</h1>
-          <h2 class="text-xl font-semibold text-gray-500 dark:text-gray-400">
+        <div class="space-y-10">
+          <h1 class="text-4xl font-bold text-black dark:text-white">Description</h1>
+          <h2 class="text-2xl font-semibold text-gray-500 dark:text-gray-400">
             YouTube for iOS, supercharged with
             <a href="//github.com/dayanch96" target="_blank" class="link">@dayanch96</a>
             YouTube Plus (ex. YTLite) and several other tweaks.
           </h2>
-          <br />
           <ul class="space-y-6 text-xl font-medium text-black md:text-2xl dark:text-white">
             <li class="text-balance">
               <a target="_blank" href="//github.com/dayanch96" class="link">Youtube Plus</a>: YouTube tweak providing no ads, background playback, customizable navigation and tab bars; includes
@@ -160,14 +152,17 @@
             <li class="text-balance"><a target="_blank" href="//github.com/Galactic-Dev/BigYTMiniPlayer" class="link">BigYTMiniPlayer</a>: Enable a bigger YouTube Miniplayer.</li>
           </ul>
         </div>
-        <div class="pb-20 text-center text-lg font-semibold text-black dark:text-white">
+        <footer class="text-balance pb-20 text-center text-lg font-semibold text-black dark:text-white">
           YTLitePlus was forked from
           <a href="//github.com/arichornlover/YouTubeRebornPlus" target="_blank" class="link">@arichorn's YoutubeRebornPlus</a>, who himself forked it from
           <a href="//github.com/qnblackcat/uYouPlus" target="_blank" class="link">@qnblackcat's uYouPlus</a>
           so thanks to them.
-        </div>
-      </div>
-    </main>
+          <br />
+          <br />
+          Copyright © 2024-present YTLitePlus Contributors. Released under the GNU AGPLv3 license.
+        </footer>
+      </main>
+    </div>
     <dialog id="alert" class="space-y-3 rounded-2xl border border-gray-400 bg-white p-8 dark:border-gray-500 dark:bg-black">
       <h1 class="text-5xl font-bold text-black dark:text-white">Information</h1>
       <h2 class="text-balance text-lg font-semibold text-gray-500 dark:text-gray-400">Download link wasn't found in the latest release.</h2>
