@@ -11,32 +11,20 @@
     <div class="flex h-screen w-screen justify-center p-8">
       <main class="w-full space-y-20 md:w-3/5">
         <header class="flex flex-col items-center gap-10 md:flex-row md:items-start">
-          <img src="/Logo.png" alt="" class="size-32 rounded-3xl border border-gray-400 sm:size-48 dark:border-gray-500" />
+          <img src="/Logo.png" class="size-[7.625rem] rounded-3xl border border-gray-400 sm:size-[11.375rem] dark:border-gray-500" />
           <div class="flex grow flex-col items-center justify-between gap-4 md:items-stretch">
-            <h1 class="text-5xl font-bold text-black dark:text-white">YTLitePlus</h1>
-            <h2 class="text-3xl text-gray-500 dark:text-gray-400">YTLite with more features!</h2>
+            <h1 class="text-3xl sm:text-5xl font-bold text-black dark:text-white">YTLitePlus</h1>
+            <h2 class="text-xl sm:text-3xl text-gray-500 dark:text-gray-400 pb-8 sm:pb-0">YTLite with more features!</h2>
             <div class="grid grid-cols-[repeat(auto-fit,14rem)] gap-3">
               <a
                 href="altstore://source/?url=https://raw.githubusercontent.com/YTLitePlus/YTLitePlus-Altstore/main/apps.json"
                 class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-2 transition-[filter] hover:brightness-[.8] dark:border-gray-500">
-                <img src="/AltStore.png" alt="" class="size-10 rounded-lg border border-gray-400 dark:border-gray-500" />
+                <img src="/AltStore.png" class="size-10 rounded-lg border border-gray-400 dark:border-gray-500" />
                 <div class="text-left">
                   <h2 class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white">Add to Altstore</h2>
                   <h2 class="font-semibold text-gray-500 dark:text-gray-400">or SideStore</h2>
                 </div>
               </a>
-
-              <button id="downloadIpa" class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-2 transition-[filter] hover:brightness-[.8] dark:border-gray-500">
-                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 512 512" class="size-10 rounded-lg border border-gray-400 bg-black p-1.5 text-white dark:border-gray-500">
-                  <path
-                    fill="#fff"
-                    d="M288 32a32 32 0 1 0-64 0v243l-73-74a32 32 0 0 0-46 46l128 128c13 12 33 12 46 0l128-128a32 32 0 0 0-46-46l-73 74V32zM64 352c-35 0-64 29-64 64v32c0 35 29 64 64 64h384c35 0 64-29 64-64v-32c0-35-29-64-64-64H347l-46 45a64 64 0 0 1-90 0l-45-45H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
-                </svg>
-                <div class="text-left">
-                  <h2 class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white">Download .ipa</h2>
-                  <h2 class="font-semibold text-gray-500 dark:text-gray-400">files.catbox.moe</h2>
-                </div>
-              </button>
 
               <a
                 href="//github.com/YTLitePlus/YTLitePlus"
@@ -52,6 +40,18 @@
                   <h2 class="font-semibold text-gray-500 dark:text-gray-400">Source Code</h2>
                 </div>
               </a>
+
+              <button id="downloadIpa" class="flex items-center gap-2 rounded-2xl border border-gray-400 px-3 py-2 transition-[filter] hover:brightness-[.8] dark:border-gray-500">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 512 512" class="size-10 rounded-lg border border-gray-400 bg-black p-1.5 text-white dark:border-gray-500">
+                  <path
+                    fill="#fff"
+                    d="M288 32a32 32 0 1 0-64 0v243l-73-74a32 32 0 0 0-46 46l128 128c13 12 33 12 46 0l128-128a32 32 0 0 0-46-46l-73 74V32zM64 352c-35 0-64 29-64 64v32c0 35 29 64 64 64h384c35 0 64-29 64-64v-32c0-35-29-64-64-64H347l-46 45a64 64 0 0 1-90 0l-45-45H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z" />
+                </svg>
+                <div class="text-left">
+                  <h2 class="pt-1.5 text-xl font-bold leading-4 text-black dark:text-white">Download .ipa</h2>
+                  <h2 class="font-semibold text-gray-500 dark:text-gray-400">files.catbox.moe</h2>
+                </div>
+              </button>
             </div>
           </div>
           <div>
@@ -99,7 +99,7 @@
         </div>
         <div class="space-y-10">
           <h1 class="text-4xl font-bold text-black dark:text-white">Description</h1>
-          <h2 class="text-2xl font-semibold text-gray-500 dark:text-gray-400">
+          <h2 class="text-2xl font-semibold text-gray-500 dark:text-gray-400 text-balance">
             YouTube for iOS, supercharged with
             <a href="//github.com/dayanch96" target="_blank" class="link">@dayanch96</a>
             YouTube Plus (ex. YTLite) and several other tweaks.
